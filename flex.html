@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .parent{
+        border:2px solid red;
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: antiquewhite;
+        flex-wrap: wrap-reverse;
+        
+        
+    }
+    .Box{
+        border:2px solid blue;
+        height: 500px;
+        width: 300px;
+        background-color: whitesmoke;
+        text-align: center;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 5px;
+
+    }
+    #Box-1{
+        
+    }
+    #Box-2{
+        
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="Box" id="Box-1">
+            <span><b>Basic</b></span><br>
+            <span>$10/month</span>
+        </div>
+        <div class="Box" id="Box-2">Box-2</div>
+        <div class="Box" id="Box-3">Box-3</div>
+        
+
+    </div>
+    
+    
+</body>
+</html>
