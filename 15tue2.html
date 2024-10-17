@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <div id="btn1">Button1</div>
+        <div id="btn2">Button2</div>
+        <p id="para1">Paragraph</p>
+        <p id="para1">Paragraph</p>
+    </div>
+    <script>
+       document.getElementById("parent").addEventListener("click",function(event){
+            if (event.target.tagnName==="BUTTON"){
+                alert(event.target.innerHTML+ "was clciked");
+            }
+            if (event.target.tagnName==="p"){
+                event.target.style.color="blue";
+            }
+        });
+
+    </script>
+</body>
+</html>
